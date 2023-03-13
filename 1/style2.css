@@ -1,0 +1,37 @@
+.header {
+    color: green;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-image: url(/img/zxc.jpg);
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+h1 {
+    border-bottom: 10px solid green;
+    border-color: green;
+}
+
+.bio {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.date {
+    font-size: 25px;
+    color: red;
+}
+
+.mesto {
+    font-size: 50px;
+    color: white;
+}
+
+acronym {
+    text-decoration: none;
+}

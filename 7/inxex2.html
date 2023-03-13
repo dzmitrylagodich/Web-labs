@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+
+<body>
+    <font size=10 color=aqua face="arial black">
+        <marquee> АНКЕТА </marquee>
+    </font>
+    <hr size=3 color=black>
+    <form action="mailto:alohadanceq@mail.ru">
+        <fieldset>
+            <legend>ФИО</legend>
+            <table>
+                <tr>
+                    <td><tt> Имя: </tt></td>
+                    <td><input type=text maxlength=25 size=60> </td>
+                </tr>
+                <tr>
+                    <td><tt> Фамилия: </tt></td>
+                    <td><input type=text maxlength=25 size=60></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Дата рождения</legend>
+            <input type=date maxlength=25 size=20>
+            <input type=month maxlength=25 size=20> <br><br>
+            <b> День: </b><input type=text maxlength=25 size=5>
+            <b> Месяц: </b>
+            <select name=увлечения>
+                <option>Январь</option>
+                <option>Февраль</option>
+                <option>Март</option>
+                <option selected>Апрель</option>
+                <option>Май</option>
+                <option>Июнь</option>
+                <option>Июль</option>
+                <option>Август</option>
+                <option>Сентябрь</option>
+                <option>Октябрь</option>
+                <option>Ноябрь</option>
+                <option>Декабрь</option>
+            </select>
+            <b> Год: </b><input type=text maxlength=25 size=20>
+        </fieldset>
+        <fieldset>
+            <legend>Пол</legend>
+            <input checked type="radio" name="answer" value="a1">Мужской
+            <input type="radio" name="answer" value="a2">Женский
+        </fieldset>
+        <p><input type="submit" value="Ok">
+            <input type=reset value="Очистить">
+        </p>
+    </form>
+</body>
+
+</html>
