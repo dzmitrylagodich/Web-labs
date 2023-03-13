@@ -7,44 +7,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>1</title>
   <style>
+    body {
+      background-color: lightblue;
+    }
+
     a {
       text-decoration: none;
+      color: black;
+    }
+
+    .header_main {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .header {
+      border-bottom: 2px solid;
+    }
+
+    .header_main:hover {
+      color: red;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    .sub-left {
+      margin-top: 50px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 3px solid;
+      padding: 15px;
+      border-color: red;
+    }
+
+    .sub-right {
+      margin-top: 50px;
+    }
+
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   </style>
 </head>
 <div class="main">
-  <h1>
-    Экономика Беларуси
-  </h1>
+  <div class="header">
+    <h1 class="header_main">
+      Промышленный комплекс
+    </h1>
+  </div>
   <div class="sub-main">
     <div class="sub-left" style="float: left;">
       <ol>
         <li>
-          <a href="/2/index_2.html">Промышленный комплекс</a>
+          <a href="/8/2/index_2.html">Промышленный комплекс</a>
         </li>
         <li>
-          <a href="/2/index_3.html">Ведущие отрасли промышленности</a>
+          <a href="/8/2/index_3.html">Ведущие отрасли промышленности</a>
         </li>
         <li>
-          <a href="/2/index_4.html">Сельское хозяйство</a>
+          <a href="/8/2/index_4.html">Сельское хозяйство</a>
         </li>
         <li>
-          <a href="/2/index_5.html">Внешнеэкономические связи</a>
+          <a href="/8/2/index_5.html">Внешнеэкономические связи</a>
         </li>
       </ol>
     </div>
     <div class="sub-right" style="float: right; width: 1000px;">
-      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: center;">
+      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: center; font-style: italic;">
         Промышленный комплекс
       </div>
-      <p style="font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+      <p style="font-family: Arial, Helvetica, sans-serif; font-size: 17px;">
         Промышленный комплекс — основа производственного потенциала Беларуси. Благодаря выгодному географическому
         положению и высокому научно–техническому потенциалу, входя в состав СССР, Беларусь являлась для страны
         своеобразным "сборочным цехом", а также специализировалась на производстве наукоемкой продукции. Это во многом
         обусловило и сегодняшнюю структуру промышленности, которая в основном ориентируется на выпуск готового продукта
         и базируется на внешних поставках материально–сырьевых и топливно–энергетических ресурсов.
       </p>
-      <img src="/img/zavod.png" alt="">
+      <div class="img">
+        <img src="/8/img/zavod.png" alt="">
+      </div>
     </div>
   </div>
 </div>

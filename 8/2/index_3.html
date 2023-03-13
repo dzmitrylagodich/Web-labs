@@ -7,108 +7,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>1</title>
   <style>
+    body {
+      background-color: lightblue;
+    }
+
     a {
       text-decoration: none;
+      color: black;
+    }
+
+    .header_main {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .header {
+      border-bottom: 2px solid;
+    }
+
+    .header_main:hover {
+      color: red;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    .sub-left {
+      margin-top: 50px;
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+      border: 3px solid;
+      padding: 15px;
+      border-color: red;
+    }
+
+    .sub-right {
+      margin-top: 50px;
+    }
+
+    .img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .spisok {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+    }
+    td{
+      padding: 5px;
+    }
+    .ttt:hover{
+      color: red;
+    }
+    .ttd:hover{
+      color:blueviolet
     }
   </style>
 </head>
 <div class="main">
-  <h1>
-    Экономика Беларуси
-  </h1>
+  <div class="header">
+    <h1 class="header_main">
+      Ведущие отрасли промышленности
+    </h1>
+  </div>
   <div class="sub-main">
     <div class="sub-left" style="float: left;">
       <ol>
         <li>
-          <a href="/2/index_2.html">Промышленный комплекс</a>
+          <a href="/8/2/index_2.html">Промышленный комплекс</a>
         </li>
         <li>
-          <a href="/2/index_3.html">Ведущие отрасли промышленности</a>
+          <a href="/8/2/index_3.html">Ведущие отрасли промышленности</a>
         </li>
         <li>
-          <a href="/2/index_4.html">Сельское хозяйство</a>
+          <a href="/8/2/index_4.html">Сельское хозяйство</a>
         </li>
         <li>
-          <a href="/2/index_5.html">Внешнеэкономические связи</a>
+          <a href="/8/2/index_5.html">Внешнеэкономические связи</a>
         </li>
       </ol>
     </div>
     <div class="sub-right" style="float: right; width: 1000px;">
-      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: center;"> 
+      <div class="ttt" style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; text-align: center;">
         Ведущие отрасли промышленности Беларуси:
       </div>
-      <ul>
-        <li>
-          машиностроение:
-        </li>
+      <div class="spisok">
         <ul>
           <li>
-            автомобилестроение
+            машиностроение:
+          </li>
+          <ul>
+            <li>
+              автомобилестроение
+            </li>
+            <li>
+              производство грузовых автомобилей
+            </li>
+            <li>
+              o радиоэлектроника
+            </li>
+            <li>
+              o тракторное и сельскохозяйственное машиностроение
+            </li>
+          </ul>
+          <li>
+            станкостроение
           </li>
           <li>
-            производство грузовых автомобилей
+            химическая промышленность
           </li>
           <li>
-            o радиоэлектроника
+            лесная и деревообрабатывающая промышленность
           </li>
           <li>
-            o тракторное и сельскохозяйственное машиностроение
+            оптико–механическая промышленность
+          </li>
+          <li>
+            легкая и пищевая промышленность
           </li>
         </ul>
-        <li>
-          станкостроение
-        </li>
-        <li>
-          химическая промышленность
-        </li>
-        <li>
-          лесная и деревообрабатывающая промышленность
-        </li>
-        <li>
-          оптико–механическая промышленность
-        </li>
-        <li>
-          легкая и пищевая промышленность
-        </li>
-      </ul>
-      <div>
+      </div>
+
+      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 17px;">
         Около 100 крупных предприятий составляют основу белорусской промышленности. Среди них Минский тракторный завод,
         Минский автомобильный завод, завод по производству холодильников "Атлант", завод по производству телевизоров
         "Горизонт", Новополоцкий и Мозырский нефтеперерабатывающие заводы, "Беларуськалий" — крупнейший в мире
         производитель калийных удобрений и другие.
       </div>
-      <img src="/img/mashnka.png" alt="">
-      <img src="/img/mashnka2.png" alt="">
-
-      <h2>
+      <div style="display: flex; align-items: center; justify-content: center;">
+        <img style="margin-right: 200px;" src="/8/img/mashnka.png" alt="" width="250px">
+        <img src="/8/img/mashnka2.png" alt="" width="250px">
+      </div>
+      <h2 class="ttt" style="text-align: center;">
         Предприятия г.Минска
       </h2>
-      <table border="5">
-        <tr align="center">
-          <td>
+      <table border="4" style="border-color: blue; margin-bottom: 50px; font-family: Arial, Helvetica, sans-serif; font-size: 17px;">
+        <tr align="center" style="font-style: italic;">
+          <td class="ttd" >
             Название предприятия
           </td>
-          <td>
+          <td class="ttd" >
             Организационно-правовая форма
           </td>
-          <td>
+          <td class="ttd" >
             Адрес
           </td>
-          <td>
+          <td class="ttd" >
             Район города
           </td>
-          <td>
+          <td class="ttd" >
             Дата основания
           </td>
-          <td>
+          <td class="ttd" >
             Вид работ
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="font-weight: bold;">
             Белбакалея
           </td>
-          <td>
+          <td style="text-align: center;">
             ОАО
           </td>
           <td>
@@ -125,10 +187,10 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="font-weight: bold;">
             МАПИД
           </td>
-          <td>
+          <td style="text-align: center;">
             ОАО
           </td>
           <td>
@@ -145,10 +207,10 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="font-weight: bold;">
             Беларусбанк
           </td>
-          <td>
+          <td style="text-align: center;">
             ОАО
           </td>
           <td>
@@ -165,10 +227,10 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="font-weight: bold;">
             Белгипс
           </td>
-          <td>
+          <td style="text-align: center;">
             ОАО
           </td>
           <td>
@@ -185,10 +247,10 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="font-weight: bold;">
             Керамин
           </td>
-          <td>
+          <td style="text-align: center;">
             ОАО
           </td>
           <td>
@@ -205,10 +267,10 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="font-weight: bold;">
             Камволь
           </td>
-          <td>
+          <td style="text-align: center;">
             ОАО
           </td>
           <td>
@@ -225,10 +287,10 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="font-weight: bold;">
             Отико
           </td>
-          <td>
+          <td style="text-align: center;">
             СП ЗАО
           </td>
           <td>
@@ -245,10 +307,10 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="font-weight: bold;">
             Минскжелезобетон
           </td>
-          <td>
+          <td style="text-align: center;">
             ОАО
           </td>
           <td>
@@ -265,10 +327,10 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="font-weight: bold;"> 
             Русский лес
           </td>
-          <td>
+          <td style="text-align: center;">
             ОАО
           </td>
           <td>
@@ -285,10 +347,10 @@
           </td>
         </tr>
         <tr>
-          <td>
+          <td style="font-weight: bold;"> 
             Минский комбинат селикатных изделий
           </td>
-          <td>
+          <td style="text-align: center;">
             ОАО
           </td>
           <td>
@@ -305,8 +367,6 @@
           </td>
         </tr>
       </table>
-
-
     </div>
   </div>
 </div>
