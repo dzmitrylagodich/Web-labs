@@ -1,16 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: lightblue;
+    }
+    .header {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 30px;
+      font-weight: bold;
+      color: blueviolet;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 15px;
+      border-bottom: 3px solid rgb(255, 0, 225);
+    }
+
+    .header:hover {
+      color: red;
+    }
+
+    .header_1 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header_2 {
+      padding-top: 50px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .dis1 {
+      width: 100px;
+      position: absolute;
+      top: 360px;
+      left: 50px;
+    }
+
+    .dis2 {
+      width: 100px;
+      position: absolute;
+      top: 300px;
+      left: 200px;
+    }
+
+    .dis3 {
+      width: 60px;
+      position: absolute;
+      top: 400px;
+      left: 300px;
+    }
+
+    .table {
+      margin-top: 100px;
+    }
+
+    .left {
+      width: 700px;
+      float: left;
+
+    }
+
+    .right {
+      width: 700px;
+      float: right;
+    }
+
+    .right_1 {
+      float: right;
+    }
+
+    .full_right {
+      border-left: 1px solid #0008ff;
+    }
+  </style>
 </head>
-<frameset cols="640,*" >
-    <frame src="info.html" name="title">
-    <frameset rows="40%,*">
-      <frame src="menu.html" name="menu">
-      <frame src="title.html" name="info">
-    </frameset>
-  </frameset>
+
+<body link="red" vlink="#green" alink="yellow">
+
+
+  <h1 class="header">Список Литературы</h1>
+
+
+  <div class="left">
+    <ol>
+      <div class="header_1">
+        <img src="/8/img/web1.jfif" style="margin-right: 20px; width: 400px;" border="4">
+        <a href="/8/3/5_2.html">
+          <li>Киселев, С.В. Веб-дизайн
+            <br>С.В. Киселев. - М.: Academia, 2017. - 152 c.
+          </li>
+        </a>
+      </div>
+      <div class="header_2">
+        <img src="/8/img/web2.jpg" style="margin-right: 20px;" border="4" aling="right" width="108px">
+        <a href="/8/3/5_3.html">
+          <li>Веб-дизайн. Элементы опыта взаимодействия <br>
+            <p
+              style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: blue; font-weight: bold;">
+              Д. Гарретт. - СПб.: Символ-плюс, 2015. - 192 c. <br>
+            </p>
+          </li>
+        </a>
+      </div>
+      <div
+        style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: blue; font-weight: bold;"
+        class="header_3">
+
+        <img src="/8/img/web3.jpg" style="margin-right: 20px;" border="4" aling="top" width="108px" hspace="20"
+          vspace="20">
+        <a href="/8/3/5_4.html">
+          HTML и CSS. Разработка и дизайн веб-сайтов / <br>
+          Д. Дакетт. - М.: Эксмо, 2015. - 480 c.
+        </a>
+
+      </div>
+    </ol>
+    Процентаж изображений:
+    </p>
+    <img src="/8//img/web1.jfif" width="108px" alt="Список Литературы" border="4">
+    <img src="/8/img/web2.jpg" width="12%" alt="Список Литературы" border="4">
+    <img src="/8/img/web3.jpg" width="101px" alt="Список Литературы" border="4">
+    <div>
+      <img class="dis1" src="/8/img/load.jpg" alt="">
+      <img class="dis2" src="/8/img/logo.webp" alt="">
+      <img class="dis3" src="/8/img/web2.jpg" alt="">
+    </div>
+  </div>
+
+
+  <div class="full_right">
+    <div class="right">
+      <p align=center><img src="/8/img/misha.jpg" width=300 height=300 style="border: 3px solid Lime;"></p>
+      <hr size=3 color=black>
+      <form action="mailto:alohadanceq@mail.ru">
+        <fieldset>
+          <legend>ФИО и пароль</legend>
+          <table>
+            <tr>
+              <td><tt> Имя: </tt></td>
+              <td><input type=text maxlength=25 size=60> </td>
+            </tr>
+            <tr>
+              <td><tt> Фамилия: </tt></td>
+              <td><input type=text maxlength=25 size=60></td>
+            </tr>
+            <tr>
+              <td><tt> Пароль: </tt></td>
+              <td><input type=password maxlength=25 size=60></td>
+            </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Дата рождения</legend>
+          <b> День: </b>
+          <select name=день>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option selected>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+          </select>
+          <b> Месяц: </b>
+          <select name=месяц>
+            <option>Январь</option>
+            <option>Февраль</option>
+            <option>Март</option>
+            <option>Апрель</option>
+            <option>Май</option>
+            <option>Июнь</option>
+            <option selected>Июль</option>
+            <option>Август</option>
+            <option>Сентябрь</option>
+            <option>Октябрь</option>
+            <option>Ноябрь</option>
+            <option>Декабрь</option>
+          </select>
+          <b> Год: </b>
+          <select name=Год>
+            <option>1995</option>
+            <option>1996</option>
+            <option>1997</option>
+            <option selected>1998</option>
+            <option>1999</option>
+            <option>2000</option>
+            <option>2001</option>
+            <option>2002</option>
+            <option>2003</option>
+            <option>2004</option>
+            <option>2005</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Другие данные</legend>
+          <input type="radio" name="answer" value="a1">Мужской
+          <input type="radio" name="answer" value="a2">Женский
+          <p><select size="3" multiple name="hero[]">
+              <option disabled>Выберите страну проживания</option>
+              <option>Республика Беларусь</option>
+              <option selected>Российская Федерация</option>
+              <option>Чехия</option>
+              <option>Польша</option>
+            </select></p>
+          <p><b> Увлечения: </b><br>
+            <input type="checkbox">Автомобили
+            <input type="checkbox">Музыка
+            <input type="checkbox">Кино
+            <input type="checkbox">Финансы
+            <input type="checkbox">Программирование
+            <input type="checkbox">Туризм
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Примечание</legend>
+          <table>
+            <tr>
+              <td valign=top><b>Ваши пожелания: </b></td>
+              <td><textarea name="message" rows=3 cols=46>Введите ваши пожелания</textarea></td>
+            </tr>
+          </table>
+        </fieldset>
+        <p><input type="submit" value="Отправить">
+          <input type=reset value="Очистить">
+        </p>
+      </form>
+
+    </div>
+
+
+
+    <div class="right_1" style="width: 700px; padding-bottom: 50px;">
+      <table border="4" width="700px" class="table">
+        <tr border="4" align="center"
+          style="font-weight: bold; font-size: 25px; font-family: Arial, Helvetica, sans-serif; font-style: italic;">
+          <td>
+            Учебник
+          </td>
+          <td>
+            Фото учебников
+          </td>
+          <td>
+            Описание
+          </td>
+          <td>
+            Рейтинг
+          </td>
+        </tr>
+        <tr align="center"
+          style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;">
+          <td style="color:red; font-size: 25px;">
+            Выразительный Javascript
+          </td>
+          <td align="center" style="padding: 10px;">
+            <img src="/8/img/web1.jfif" alt="" width="100px">
+          </td>
+          <td style="font-style: italic;">
+            Учебник помогает в изучении JS и помогает создать свое первое приложение на JS
+          </td>
+          <td style="font-weight: bold; font-size: 35px; color: gold;">
+            9.3
+          </td>
+        </tr>
+        <tr align="center"
+          style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;">
+          <td style="color:red; font-size: 25px;">
+            Основы программирования
+          </td>
+          <td align="center" style="padding: 10px;">
+            <img src="/8/img/web2.jpg" alt="" width="100px">
+          </td>
+          <td style="font-style: italic;">
+            Учебник включает в себя полное описание основ программирования
+          </td>
+          <td style="font-weight: bold; font-size: 35px; color: gold;">
+            9.1
+          </td>
+
+        </tr>
+        <tr align="center"
+          style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;">
+          <td style="color:red; font-size: 25px;">
+            Сам себе программист
+          </td>
+          <td align="center" style="padding: 10px;">
+            <img src="/8/img/web3.jpg" alt="" width="100px">
+          </td>
+          <td style="font-style: italic;">
+            Учебник выделяют многие люди, как отличный поутеповдитель в программировании
+          </td>
+          <td style="font-weight: bold; font-size: 35px; color: gold;">
+            9.2
+          </td>
+        </tr>
+
+      </table>
+
+
+    </div>
+  </div>
+</body>
+
 </html>
