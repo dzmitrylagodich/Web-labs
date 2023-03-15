@@ -1,0 +1,59 @@
+
+
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+.header_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dis1 {
+    width: 50px;
+    position: absolute;
+    top: 340px;
+    left: 600px;
+}
+
+.dis2 {
+    width: 100px;
+    position: absolute;
+    top: 230px;
+    left: 550px;
+}
+
+.dis3 {
+    width: 60px;
+    position: absolute;
+    top: 100px;
+    left: 660px;
+}
+
+.table {
+    margin-top: 40px;
+}
+
+.silka {
+    color: black;
+}
+
+.silka:hover{
+    color:hotpink;
+    text-decoration: underline;
+}
