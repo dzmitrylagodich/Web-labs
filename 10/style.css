@@ -1,0 +1,98 @@
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+.header_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dis1 {
+    width: 50px;
+    position: absolute;
+    top: 340px;
+    left: 600px;
+}
+
+.dis2 {
+    width: 100px;
+    position: absolute;
+    top: 230px;
+    left: 550px;
+}
+
+.dis3 {
+    width: 60px;
+    position: absolute;
+    top: 100px;
+    left: 660px;
+}
+
+.table {
+    margin-top: 40px;
+}
+
+.silka {
+    color: black;
+}
+
+.silka:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
+
+.test {
+    transition: 1s;
+    /* Время эффекта */
+    text-align: center;
+}
+
+.test:hover {
+    transform: scale(1.2);
+    /* Увеличиваем масштаб */
+}
+
+
+
+.link-ease-in-out a {
+    display: inline-block;
+    color: #ff00bf;
+    /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none;
+    /* Убираем подчеркивание */
+    cursor: pointer;
+}
+
+.link-ease-in-out a:after {
+    background-color: #9500c7;
+    /* Цвет линии при наведении на нее курсора мыши */
+    display: block;
+    content: "";
+    height: 2px;
+    /* Высота линии */
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+    width: 100%;
+}

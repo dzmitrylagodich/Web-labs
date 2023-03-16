@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Мой список</title>
+    <style>
+        /* Общие стили для списка */
+        ul {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-left: 0;
+            padding-left: 40px;
+            list-style: none;
+        }
+
+        /* Стиль для первого уровня списка */
+        ul>li {
+            background: linear-gradient(to right, #595656, #f9f9f9);
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Стиль для первого уровня списка - наведение мыши */
+        ul>li:hover {
+            background: linear-gradient(to right, #7e00d8, #00e5ff);
+            cursor: pointer;
+        }
+
+        /* Стиль для второго уровня списка */
+        ul ul>li {
+            background: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 2px 20px rgba(55, 0, 255, 0.1);
+            margin-bottom: 10px;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Стиль для третьего уровня списка */
+        ul ul ul>li {
+            background: #e6e6e6;
+            border-radius: 5px;
+            box-shadow: 0 2px 20px rgba(255, 0, 212, 0.1);
+            margin-bottom: 10px;
+            padding: 20px;
+            position: relative;
+        }
+
+        /* Стиль для маркера списка */
+        ul>li::before {
+            background: url('img/halfmoon.png') no-repeat center center;
+            content: '';
+            display: block;
+            height: 30px;
+            left: -40px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 30px;
+        }
+
+        /* Стиль для заголовка первого уровня списка */
+        ul>li>h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        /* Стиль для заголовка второго уровня списка */
+        ul ul>li>h3 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        /* Стиль для заголовка третьего уровня списка */
+        ul ul ul>li>h4 {
+            font-size: 16px;
+            margin-top: 0;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            color: black
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Самые классные языки программирования</h1>
+    <ul>
+        <li>
+            <h2> Web программирование:</h2>
+            <ul>
+                <li>
+                    <h3>Верстка</h3>
+                    <ul>
+                        <li>
+                            <h4>Html</h4>
+                            <p>cтандартизированный язык гипертекстовой разметки документов для просмотра веб-страниц в
+                                браузере. </p>
+                        </li>
+                        <li>
+                            <h4>Css</h4>
+                            <p>формальный язык описания внешнего вида документа, написанного с использованием языка
+                                разметки.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Python</h3>
+                    <p>Интерпретируемый язык программирования высокого уровня, используется для различных целей,
+                        от веб-разработки до научных вычислений.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h2>Java</h2>
+            <p>Объектно-ориентированный язык программирования, который часто используется для создания приложений,
+                работающих на сервере.</p>
+        </li>
+        <li>
+            <h2>Список популярных инструментов для разработки:</h2>
+            <ul>
+                <li>
+                    <h3>Что мы используем</h3>
+                    <ul>
+                        <li>
+                            <h4>Visual Studio Code</h4>
+                            <p>Кросс-платформенный редактор кода, который часто используется для разработки
+                                веб-приложений.</p>
+                        </li>
+                        <li>
+                            <h4>Sublime Text:</h4>
+                            <p>Редактор кода, который позволяет быстро редактировать исходный код.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Atom</h3>
+                    <p>Кросс-платформенный редактор кода, который обладает большим количеством расширений и настроек.
+                    </p>
+                </li>
+                <li>
+                    <h3>NetBeans</h3>
+                    <p>Интегрированная среда разработки, которая поддерживает различные языки программирования, включая
+                        Java, PHP и C++.</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

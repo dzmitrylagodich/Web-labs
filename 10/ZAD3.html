@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Пример таблицы с анимацией</title>
+    <style>
+        /* Стиль таблицы */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 12px;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        /* Анимация для таблицы */
+        @keyframes tableFadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        table {
+            animation: tableFadeIn 0.5s ease-out;
+        }
+        td:hover{
+            color:aqua;
+            text-decoration: underline;
+        }
+
+        thead > tr> th:hover{
+            color: white;
+            text-decoration: underline;
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Язык программирования</th>
+                <th>Год создания</th>
+                <th>Тип</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Java</td>
+                <td>1995</td>
+                <td>Объектно-ориентированный</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>1989</td>
+                <td>Интерпретируемый</td>
+            </tr>
+            <tr>
+                <td>C++</td>
+                <td>1983</td>
+                <td>Объектно-ориентированный</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>1995</td>
+                <td>Сценарный</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
