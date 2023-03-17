@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+
+<body>
+    <form>
+        <label for="r1">Сопротивление R1:</label>
+        <input type="text" id="r1" />
+
+        <label for="r2">Сопротивление R2:</label>
+        <input type="text" id="r2" />
+
+        <label for="u">Напражение U :</label>
+        <input type="text" id="u" />
+
+        <button type="button" onclick="res()">Сила тока Равна : </button>
+
+        <label for="result">Сила тока I:</label>
+        <input type="text" id="result" />
+
+    </form>
+    <script>
+        function res() {
+            let r1 = document.getElementById("r1").value;
+            let r2 = document.getElementById("r2").value;
+            let u = document.getElementById("u").value;
+
+            let Rmain = (r1 * r2) / (r1 + r2);
+            let I = u / (Rmain);
+
+            I = I.toFixed(2);
+            document.getElementById("result").value = I;
+
+        }
+    </script>
+</body>
+
+</html>

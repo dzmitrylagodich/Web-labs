@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+
+<body>
+    <form>
+        <label for="x">Введите целое двухзначное число: </label>
+        <input type="text" id="x" />
+
+        <button type="button" onclick="zamena()">Поменять цифры местами</button>
+
+        <label for="result-x">Получаем число: </label>
+        <input type="text" id="result-x" />
+
+    </form>
+    <script>
+        function zamena() {
+            let a = document.getElementById("x").value;
+
+            let z = a / 10;
+            let x = a % 10;
+
+            let zxc = x * 10 + z;
+            let mm = Math.trunc(zxc);
+            document.getElementById('result-x').value = mm;
+        }
+    </script>
+</body>
+
+</html>

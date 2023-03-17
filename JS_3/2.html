@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+
+<body>
+    <form>
+        <label for="a1">Колличество товара А</label>
+        <input type="number" id="a1" name="a1" required><br><br>
+
+        <label for="b1">Колличество товара В</label>
+        <input type="number" id="b1" name="b1" required><br><br>
+        
+        <label for="c1">Колличество товара С</label>
+        <input type="number" id="c1" name="c1" required><br><br>
+
+        <button type="button" onclick="raschet()">Проверить</button>
+    </form>
+
+
+    <p id="result"></p>
+
+    <script>
+        function raschet() {
+            var a = Number(document.getElementById("a1").value);
+            var b = Number(document.getElementById("b1").value);
+            var c = Number(document.getElementById("c1").value);
+
+            if (a < b && a < c) {
+                document.getElementById("result").innerHTML = "Неоходимо привезти товар А";
+            }
+
+            if (b < a && b < a) {
+                document.getElementById("result").innerHTML = "Неоходимо привезти товар В";
+            }
+
+            if (c < a && c < b) {
+                document.getElementById("result").innerHTML = "Неоходимо привезти товар С";
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>

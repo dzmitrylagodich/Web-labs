@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Расчет времени бега</title>
+</head>
+
+<body>
+    <form>
+        <label for="start-time">Стартовое время:</label>
+        <input type="text" id="start-time" placeholder="чч:мм:сс" />
+
+        <label for="finish-time">Финишное время:</label>
+        <input type="text" id="finish-time" placeholder="чч:мм:сс" />
+
+        <button type="button" onclick="calculate()">Рассчитать время бега</button>
+
+        <label for="result">Результат:</label>
+        <input type="text" id="result" readonly />
+    </form>
+
+    <script>
+        function calculate() {
+            const startTime = document.getElementById('start-time').value;
+            const finishTime = document.getElementById('finish-time').value;
+
+            const [startHours, startMinutes, startSeconds] = startTime.split(':').map(Number);
+            const [finishHours, finishMinutes, finishSeconds] = finishTime.split(':').map(Number);
+
+            let diffHours = finishHours - startHours;
+            let diffMinutes = finishMinutes - startMinutes;
+            let diffSeconds = finishSeconds - startSeconds;
+
+
+            if (diffSeconds < 0) {
+                diffSeconds += 60;
+                diffMinutes -= 1;
+            }
+
+
+            if (diffMinutes < 0) {
+                diffMinutes += 60;
+                diffHours -= 1;
+            }
+
+            const result = `${diffHours}:${diffMinutes}:${diffSeconds}`;
+            document.getElementById('result').value = result;
+        }
+    </script>
+</body>
+
+</html>

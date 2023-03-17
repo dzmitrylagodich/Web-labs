@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+
+<body>
+    <form>
+        <label for="x">Переменная X:</label>
+        <input type="text" id="x" />
+
+        <label for="y">Переменная Y:</label>
+        <input type="text" id="y" />
+
+        <button type="button" onclick="swap()">Обменять значения</button>
+
+        <label for="result-x">Переменная X:</label>
+        <input type="text" id="result-x" />
+
+        <label for="result-y">Переменная Y:</label>
+        <input type="text" id="result-y" />
+    </form>
+    <script>
+        function swap() {
+            let x = document.getElementById('x').value;
+            let y = document.getElementById('y').value;
+
+            let temp = x;
+            x = y;
+            y = temp;
+
+            document.getElementById('result-x').value = x;
+            document.getElementById('result-y').value = y;
+        }
+
+        function swapWithoutTemp() {
+            let x = document.getElementById('x').value;
+            let y = document.getElementById('y').value;
+
+            [x, y] = [y, x];
+
+            // Формируем результат и выводим его в input-ы
+            document.getElementById('result-x').value = x;
+            document.getElementById('result-y').value = y;
+        }
+
+    </script>
+</body>
+
+</html>
