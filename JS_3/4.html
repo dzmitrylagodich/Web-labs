@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+
+<body>
+    <form>
+        <label for="a1">Введите Колличество книг </label>
+        <input type="number" id="a1" name="a1" required><br><br>
+
+        <button type="button" onclick="raschet()">Проверить</button>
+    </form>
+
+
+    <p id="result"></p>
+    <script>
+        function raschet() {
+            var a = Number(document.getElementById("a1").value);
+            var s;
+            switch (a) {
+                case (a%10 == 1 && a % 100 !=11): 
+                Document.getElementById("result").innerHTML= "Книга"; break;
+                case (2 <= a %10 <=4  &&  !(12 <=a %100 <=14)): 
+                Document.getElementById("result").innerHTML="Книги";break;
+                case  (a) : document.getElementById("result").innerHTML="Книг";break; 
+            }
+        }
+
+// if n % 10 == 1 and n % 100 != 11:
+//     print(n, "книга")
+// elif 2 <= n % 10 <= 4 and not (12 <= n % 100 <= 14):
+//     print(n, "книги")
+// else:
+//     print(n, "книг")
+
+
+    </script>
+</body>
+
+</html>

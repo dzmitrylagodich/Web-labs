@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3</title>
+</head>
+
+<body>
+    <form>
+        <label for="a1">Введите целое трехзначное число</label>
+        <input type="number" id="a1" name="a1" required><br><br>
+
+        <button type="button" onclick="raschet()">Проверить</button>
+    </form>
+
+
+    <p id="result"></p>
+    <script>
+        function raschet() {
+            var a = Number(document.getElementById("a1").value);
+            var b = a % 10;
+            var c =  (parseInt((a % 100) / 10));
+
+            if (b == c) {
+                document.getElementById("result").innerHTML = "Последняя и средняя цифры числа равны";
+            }
+            else {
+                document.getElementById("result").innerHTML = "Последняя и средняя цифры не равны";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
