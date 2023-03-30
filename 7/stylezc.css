@@ -1,0 +1,72 @@
+body {
+  background-image: url("/7/img/zxc2.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3,
+span {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.header {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.header_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.dis1 {
+  width: 200px;
+  position: absolute;
+  top: 500px;
+  left: 419px;
+}
+
+.dis2 {
+  width: 200px;
+  position: absolute;
+  top: 250px;
+  left: 419px;
+}
+
+.dis3 {
+  width: 120px;
+  position: absolute;
+  top: 80px;
+  left: 600px;
+}
+
+.table {
+  margin-top: 100px;
+}
+
+.paragraph3 :hover {
+  color: yellow;
+  background-color: black;
+}
+
+img{
+
+}

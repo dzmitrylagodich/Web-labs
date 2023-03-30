@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+    <style>
+        body {
+
+            color: yellow;
+        }
+
+        .quadrilateral {
+            border-bottom: 50px solid red;
+            border-left: 30px solid transparent;
+            border-right: 70px solid transparent;
+            border-top: 100px solid transparent;
+            height: 0;
+            width: 100px;
+            z-index: 3;
+            transform: rotate(15deg);
+            position: absolute;
+            top: 50px;
+            left: 270px;
+        }
+
+
+        .circle1 {
+            width: 200px;
+            height: 200px;
+            background: #0d74e2;
+            border-radius: 100px;
+            position: absolute;
+            left: 330px;
+            top: 70px;
+            z-index: 1;
+        }
+
+        .circle {
+            width: 220px;
+            height: 220px;
+            background: #bf1616;
+            border-radius: 110px;
+            position: absolute;
+            left: 170px;
+            top: 50px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="">
+        <div class="quadrilateral"></div>
+    </a>
+    <a href="">
+        <div class="circle"></div>
+    </a>
+    <div class="circle1"></div>
+</body>
+
+</html>

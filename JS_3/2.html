@@ -10,38 +10,42 @@
 
 <body>
     <form>
-        <label for="a1">Колличество товара А</label>
-        <input type="number" id="a1" name="a1" required><br><br>
-
-        <label for="b1">Колличество товара В</label>
-        <input type="number" id="b1" name="b1" required><br><br>
-        
-        <label for="c1">Колличество товара С</label>
-        <input type="number" id="c1" name="c1" required><br><br>
-
-        <button type="button" onclick="raschet()">Проверить</button>
+        <label for="a">Количество товара А:</label>
+        <input type="number" id="a" name="a" required><br><br>
+        <label for="b">Количество товара В:</label>
+        <input type="number" id="b" name="b" required><br><br>
+        <label for="c">Количество товара С:</label>
+        <input type="number" id="c" name="c" required><br><br>
+        <button type="button" onclick="checkProducts()">Проверить</button>
     </form>
-
 
     <p id="result"></p>
 
+
     <script>
-        function raschet() {
-            var a = Number(document.getElementById("a1").value);
-            var b = Number(document.getElementById("b1").value);
-            var c = Number(document.getElementById("c1").value);
+        function checkProducts() {
+            // Получаем количество товаров каждого вида из формы
+            const a = parseInt(document.getElementById('a').value);
+            const b = parseInt(document.getElementById('b').value);
+            const c = parseInt(document.getElementById('c').value);
 
-            if (a < b && a < c) {
-                document.getElementById("result").innerHTML = "Неоходимо привезти товар А";
+            // Определяем наименьшее количество товаров
+            let minCount = Math.min(a, b, c);
+            let minProduct = '';
+
+            if (a === minCount) {
+                minProduct += 'A';
+            }
+            if (b === minCount) {
+                minProduct += minProduct.length > 0 ? ', B' : 'B';
+            }
+            if (c === minCount) {
+                minProduct += minProduct.length > 0 ? ', C' : 'C';
             }
 
-            if (b < a && b < a) {
-                document.getElementById("result").innerHTML = "Неоходимо привезти товар В";
-            }
+            // Выводим результат
+            document.getElementById('result').innerHTML = `Необходимо закупить товар(ы) "${minProduct}"`;
 
-            if (c < a && c < b) {
-                document.getElementById("result").innerHTML = "Неоходимо привезти товар С";
-            }
 
         }
 
