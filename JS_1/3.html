@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя веб-страница</title>
+</head>
+<body>
+	<h1 style="display: flex; justify-content: center; align-items: center;">Информация обо мне</h1>
+	<img style="width: 250px;" id="my-photo" src="dima.jpg" alt="Мое фото">
+	<script>
+
+		var nameEl = document.createElement("p");
+		var birthdateEl = document.createElement("p");
+		var educationEl = document.createElement("p");
+		var hobbiesEl = document.createElement("p");
+
+		nameEl.textContent = "Меня зовут Вагин Дмитрий";
+		birthdateEl.textContent = "Дата рождения: 04.07.2002";
+		educationEl.textContent = "Закончил СШ №1 Г. Березы";
+		hobbiesEl.textContent = "Увлечения: Doka2 WEB-технолоджис ";
+		
+		// document.("h1").style.fontSize = "45px";
+		
+		document.body.appendChild(nameEl);
+		document.body.appendChild(birthdateEl);
+		document.body.appendChild(educationEl);
+		document.body.appendChild(hobbiesEl);
+
+
+	</script>
+</body>
+</html>

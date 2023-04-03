@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>DOM example</title>
+    <style>
+        /* Стили для кнопок */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #0062cc;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Добро пожаловать на мою первую веб-страницу!</h1>
+    <p>Здесь вы можете найти много интересной информации.</p>
+    <ul>
+        <li>Первый пункт списка</li>
+        <li>Второй пункт списка</li>
+        <li>Третий пункт списка</li>
+    </ul>
+    <img src="https://example.com/image.jpg" alt="Изображение">
+    <a href="second_page.html" class="button">Перейти на вторую страницу</a>
+    <button class="button" onclick="changeStyle()">Изменить оформление страницы</button>
+    <script>
+        function printDOM(node, prefix) {
+            console.log(prefix + node.nodeName);
+            for (let i = 0; i < node.childNodes.length; i++) {
+                printDOM(node.childNodes[i], prefix + "\t");
+            }
+        }
+        printDOM(document, "");
+    </script>
+</body>
+
+</html>

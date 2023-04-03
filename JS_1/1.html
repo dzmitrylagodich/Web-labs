@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Моя первая веб-страница</title>
+  <style>
+    /* Стили для кнопок */
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-left: 50px;
+    }
+
+    .button:hover {
+      background-color: #0062cc;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="display: flex; justify-content: center; align-items: center;">БНТУ</h1>
+  <p style="display: flex; justify-content: center; align-items: center;">ИПФ</p>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <ul>
+      <li>Программирование</li>
+      <li>Педагогика</li>
+      <li>Полный кайф</li>
+    </ul>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <img style="width: 250px;" src="dima.jpg" alt="Изображение">
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center; ">
+    <a href="3.html" class="button">Перейти на вторую страницу</a>
+    <button class="button" onclick="changeStyle()">Изменить оформление страницы</button>
+  </div>
+  <script>
+    function changeStyle() {
+      document.body.style.backgroundColor = "#fff";
+      document.body.style.color = "#4169E1";
+      document.body.style.backgroundColor = "#000";
+      document.querySelector("h1").style.fontSize = "45px";
+      document.querySelector("h1").style.textDecoration = "underline";
+      document.querySelector("p").style.fontSize = "30px";
+      document.querySelector("ul").style.fontSize = "30px";
+    }
+  </script>
+</body>
+
+</html>

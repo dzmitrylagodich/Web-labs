@@ -1,0 +1,72 @@
+/* Первое задание  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+h1,
+h2,
+h3,
+span {
+    color: rgb(255, 168, 18);
+    font-family: Arial, sans-serif;
+}
+
+#para1 {
+    border: 2px solid blue;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    padding: 10px;
+
+}
+
+/* ТРЕТЬЕ ЗАДАНИЕ!!!!!!!!!!!!!!!!!!!!!!!!! */
+#second-span {
+    color: blue;
+    font-style: italic;
+}
+
+#third-span {
+    color: red;
+    text-decoration: underline;
+}
+
+#fore {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 10px;
+    margin: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    width: 300px;
+    text-align: center;
+}
+
+table {
+    background-image: url("img/fon.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 168, 18);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    width: 1200px;
+}
+
+/* Свое  */
+.sss_s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding-top: 50px;
+    text-decoration: none;
+}
+
+.sss_s:hover{
+    text-decoration: underline;
+    color: fuchsia;
+}
